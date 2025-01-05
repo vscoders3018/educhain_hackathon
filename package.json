@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.4.0"
+  },
+  "scripts": {
+    "a": "concurrently \"cd admin && npm run dev\" \"cd frontend && npm run dev\" \"cd backend && npm start\"",
+    "b": "concurrently \"cd admin && npm run dev\" \"cd frontend && npm run dev\" \"cd backend && nodemon server.js\""
+  }
+}
